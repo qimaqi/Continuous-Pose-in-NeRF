@@ -3,7 +3,7 @@ Implementation of Continuous Pose for Monocular Cameras in Neural Implicit Repre
 
 
 ## TODO
-- [ ] Upload demo code
+- [x] Upload demo code
 - [ ] Release pip package (XD new user suspend)
 - [ ] Release example on Nerfstudio
 - [ ] Release mono-lego dataset
