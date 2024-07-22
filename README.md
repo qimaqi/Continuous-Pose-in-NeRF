@@ -96,6 +96,24 @@ Since now the popularity in dense-slam is crazing and before I cleaned all messy
 
 #### Detail tutorial
 ---
+- Step 0:
+ - Initialize the PoseNet, we basically just need the number of frames, if you do not know in your case, just put a large number here. If you want to small model, feel free to change the layers_feat
+  ```python
+    ##### create PoseNet 
+    posenet_config = { 'n_img':num_frames , 
+                    'tracking': {
+                              "poseNet_freq": 5, 
+                              "device": "cuda:0", 
+                              "layers_feat": [None,256,256,256,256,256,256,256,256],
+                              "skip": [4] }
+                            }
+    transNet = TransNet(posenet_config)
+    transNet = transNet.to(device)
+    rotsNet = RotsNet(posenet_config)
+    rotsNet = rotsNet.to(device)
+
+  ```
+
 - Step 1:
   - Change the optimizer and parameter initialization, we modify the function ***initialize_optimizer()*** to make sure the PoseNet parameters will be passed to optimizer, moreover we set the ``` params['cam_unnorm_rots']``` and ```params['cam_trans'] ``` to ```requires_grad_(False)``` to avoid leaf tensor replacement issues. Note in mapping we change it back and this modificaton might be different based on your implementation in your slam-system.
 
