@@ -14,7 +14,7 @@
 
 ## News
 - [x] Upload demo code
-- [x] Release code for showing how to implement on Splatam
+- [x] Release code for showing how to implement on [Splatam!](https://github.com/qimaqi/SplaTAM_with_PoseNet)!
 
 ## Introduction
 
