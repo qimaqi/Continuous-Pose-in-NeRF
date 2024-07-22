@@ -12,7 +12,9 @@
 </p>
 
 
-
+## News
+- [x] Upload demo code
+- [x] Release code for showing how to implement on Splatam
 
 ## Introduction
 
@@ -149,7 +151,7 @@ Since now the popularity in dense-slam is crazing and before I cleaned all messy
 That's it, by simply doing so we test on Replica room 0 and results we show on step 500, more results will coming out.
 
 
-# News
+# TODOs
 - [x] Upload demo code
 - [x] Release code for showing how to implement on Splatam
 - [ ] Release pip package (XD new user suspend)
